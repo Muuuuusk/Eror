@@ -1,4 +1,23 @@
-import os
+
+import getpass
+
+def login():
+    print("one-piece-is-real")
+    username = input()
+    
+    password = getpass.getpass("--+-&&+-++---@:")
+
+    # Check the ID and password
+    if username == "one-piece-is-real" and password == "--+-&&+-++---@:":
+        print("Login successful!")
+        # Continue with your script here
+    else:
+        print("Invalid ID or password. Please try again.")
+        # You might want to call the login function again or exit the script
+
+# Call the login function to start the process
+login()
+
 
 def print_banner():
     os.system('clear')  # Clears the terminal screen
